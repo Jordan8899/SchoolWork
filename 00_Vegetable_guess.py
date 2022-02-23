@@ -5,7 +5,7 @@ question_check = False
 # Asks user for input on vegetable
 
 while not question_check:
-    vegetable_guess = input("Pick either Carrot, Broccoli, Peas or Sweetcorn I will attempt to guess your choice \n").lower().strip()
+    vegetable_guess = input("Pick either Carrot, Broccoli, Peas or Sweetcorn I will attempt to guess your choice.\n").lower().strip()
 
     if vegetable_guess == "carrot" or vegetable_guess == "broccoli" or vegetable_guess == "peas" or vegetable_guess == "sweetcorn":
         question_check = True
