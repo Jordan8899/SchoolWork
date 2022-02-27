@@ -1,22 +1,17 @@
-valid = False
+def value_checker(question):
+    valid = False
+    while not valid:
+        try:
+            response = int(input(question))
+            return response
 
-while not valid:
-    try:
-        times_tables = int(input("What number would you like to times table? "))
-        valid = True
-
-    except ValueError:
-        print("Please input int")
+        except ValueError:
+            print("Please input whole number \n")
 
 
-valid = False
-while not valid:
-    try:
-        max_value = int(input("what is the max value of your times table"))
-        valid = True
-    except ValueError:
-        print("Please input int")
+times_tables = value_checker("What number would you like to times table? ")
 
+max_value = value_checker("what is the max value of your times table? ")
 
 max_value = max_value + 1
 answer = 0
