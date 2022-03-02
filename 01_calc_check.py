@@ -31,7 +31,7 @@ def marker(a, b, c):
 
     else:
         print("Sorry there was an error\n")
-
+ 
 marking = False
 while not marking:
     num1 = value_checker("What's the 1st number? ")
